@@ -14,7 +14,7 @@ const starContainerstyle = {
 export default function Starrating({
   maxrating = 5,
   color = "#fcc429",
-  size = 48,
+  size = 24,
 }) {
   const [rating, setRating] = useState(0);
   const [tempRating, setTemprating] = useState(0);
@@ -50,8 +50,8 @@ export default function Starrating({
 
 function Star({ onRate, full, onHoverIn, onHoverOut, color, size }) {
   const starstyle = {
-    width: "48px",
-    height: "48px",
+    width: `${size}px`,
+    height: `${size}px`,
     display: "block",
     cursor: "pointer",
     color,
